@@ -1,0 +1,95 @@
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body{
+	font-family: "Montserrat",sans-serif;
+	font-size: 16px;
+	margin: 0;
+	background:url("https://cdn.shopify.com/s/files/1/0100/6082/files/glacierbg.jpg?v=1560359164");
+	background-size: cover;
+	color: #000;
+	height: 100%;
+}
+
+
+.header{
+	padding: 30px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	transition: all 0.1s ease-in-out;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	font-size: 40px;
+	text-decoration: none;
+	color: red;
+	font-weight: 700;
+}
+.main_nav{}
+.main_nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.main_nav ul li{
+	display: inline-block;
+	margin-left: 25px;
+}
+.main_nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	transition: all 0.3s ease-in-out;
+}
+.main_nav ul li:hover a{
+	color: #f00;
+}
+.banner{
+	background:url('../images/banner.jpg') center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+.banner-overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:linear-gradient(to right, rgba(7,12,18,0.9) 50%, rgba(5,90,132,0.94));
+}
+.body_wrap{
+	padding: 50px 0;
+	font-size: 18px;
+}
+.body_wrap h1{
+	font-size: 50px;
+	font-family: "Courier";
+}
+.header.fixed{
+	opacity: 0;
+	transform: translateY(-50%);
+}
+.header.active{
+	transition: all 0.4s ease-in-out;
+	background: #024E73;
+	padding: 20px 0;
+	opacity: 1;
+	transform: none;
+}
